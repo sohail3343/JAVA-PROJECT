@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form page</title>
+</head>
+<body>
+<h1>This is my form page</h1>
+<form action="RegisterServlet" method="get">
+<table>
+<tr>
+ <td>enter your name:<input type="text" name="user_name" placeholder="enter here"></td>
+</tr>
+<tr>
+<td>Enter your paasword:<input type="password" name="user_password" placeholder="enter your password"> </td>
+
+</tr>
+<tr>
+<td> enter your email:<input type="email" name="user_email" placeholder="enter email here"></td>
+</tr>
+<tr>
+<td>select gender:<input type="radio" name="user_gender" value="male">male &nbsp; <input type="radio" name="user_gender" value="female">female</td>
+</tr>
+<tr>
+<td>select your course</td>
+<td>
+<select name="user_course"">
+<option value="java">java</option>
+<option value="php">php</option>
+<option value="python">python</option>
+<option value="android">android</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+
+<input type="checkbox" value="checked" name="condition">
+agree term and conditions
+</td>
+
+<td>
+</td>
+<tr>
+<td>
+<button type="submit"> Register</button>
+<button type="Reset"> Reset</button>
+</td>
+
+</tr>
+
+</table>
+
+
+
+
+</form>
+
+</body>
+</html>

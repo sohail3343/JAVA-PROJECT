@@ -1,0 +1,9 @@
+package com.SpringCore.Autowire.Annotations;
+
+public class Snippet {
+	  <bean class="com.SpringCore.Autowire.Address" name="address">
+	    <property name="street" value="sakinaka"/>
+	    <property name="city" value="mumbai"/>
+	    </bean>
+}
+

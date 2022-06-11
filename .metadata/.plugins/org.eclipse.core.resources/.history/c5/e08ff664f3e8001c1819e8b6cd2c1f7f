@@ -1,0 +1,16 @@
+package com.SpringCore;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class A {
+public static void main(String[] args) {
+	List<String> l=new ArrayList<String>();
+	l.add("hi");
+	l.add("hi");
+	l.add("how");
+	l.add("are");
+	l.add("you");
+	System.out.println("before list:" +l);
+}
+}

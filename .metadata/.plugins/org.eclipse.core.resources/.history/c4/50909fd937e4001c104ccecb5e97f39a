@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="" method="post">
+<table>
+<tr> 
+<td>
+Name
+<input type="text" name="name"  placeholder="enter your name here">
+
+</td>
+</tr>
+<tr>
+<a href="SECOND.html"> go to second html</a>
+</tr>
+
+
+</table>
+
+
+
+
+
+</form>
+</body>
+</html>

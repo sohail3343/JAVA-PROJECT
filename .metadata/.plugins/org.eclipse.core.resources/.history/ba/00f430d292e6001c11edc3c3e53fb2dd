@@ -1,0 +1,19 @@
+package com.SpringCore.lifecycle;
+
+public class Pepsi {
+private double price;
+
+public Pepsi() {
+	super();
+	
+}
+
+public double getPrice() {
+	return price;
+}
+
+public void setPrice(double price) {
+	this.price = price;
+}
+
+}

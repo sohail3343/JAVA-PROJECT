@@ -1,0 +1,11 @@
+package com.SpringCore;
+
+public class test {
+	public static void main(String[] args) {
+		String s=new String("md");
+		s.concat("khan");
+		System.out.println(s);
+	}
+
+
+}

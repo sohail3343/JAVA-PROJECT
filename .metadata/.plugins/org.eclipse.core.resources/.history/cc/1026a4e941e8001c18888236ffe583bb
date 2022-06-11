@@ -1,0 +1,29 @@
+package com.cache;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.hibernate.Student;
+
+public class FirstDemo {
+public static void main(String[] args) {
+	Configuration cfg=new Configuration();
+	cfg.configure();
+	SessionFactory factory = cfg.buildSessionFactory();
+	Session session = factory.openSession();
+	
+	Student st = session.get(Student.class,8);
+	System.out.println(st);
+	Student st1 = session.get(Student.class,8);
+	System.out.println(st1);
+	Student s3 = session.get(Student.class,5);
+	
+   session.close();	
+	factory.close();
+	
+	
+	
+	
+}
+}
