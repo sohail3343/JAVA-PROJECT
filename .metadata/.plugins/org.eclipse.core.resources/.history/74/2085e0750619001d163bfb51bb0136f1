@@ -1,0 +1,11 @@
+package com.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.test.entities.books;
+
+public class BookService {
+private List<books> list=new ArrayList<>();
+
+}

@@ -1,0 +1,27 @@
+package com.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.test.entities.books;
+
+public class BookService {
+private static List<books> l=new ArrayList<>();
+static {
+	
+	l.add(new books(1,"java","md"));
+	l.add(new books(12,"python","sk"));
+	l.add(new books(123,"ccc","md"));
+	l.add(new books(1333,"android","md"));
+}
+public List<books> getallBooks()
+{
+	
+return l;
+}
+public books getbookByid(int id)
+{
+l.stream().filter(e->e.getId()==123).findFirst().get();	
+
+}
+}

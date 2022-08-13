@@ -1,0 +1,22 @@
+package com.SpringDataJpa;
+
+import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import com.SpringDataJpa.entities.Student;
+@RunWith(SpringRunner.class)
+@SpringBootTest
+class SpringDataJpaApplicationTests {
+
+	@Test
+	public void testSaveStudent() {
+		Student st=new Student();
+		st.setId(11);
+		st.setName("sohail");
+		st.setTestScore(100);
+		
+	}
+
+}

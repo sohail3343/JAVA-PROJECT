@@ -1,0 +1,5 @@
+package com.sohail.core.Service;
+
+public class PaymentServiceImpl implements PaymentService {
+
+}

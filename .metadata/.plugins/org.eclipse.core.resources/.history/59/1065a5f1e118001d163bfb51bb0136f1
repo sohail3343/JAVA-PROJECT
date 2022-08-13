@@ -1,0 +1,15 @@
+package com.devtool;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class TestController {
+
+	public String Home()
+	{
+	int a=88;
+	int b=99;
+		
+		return "This is just testing and the sun of a and b is "+a+b;
+	}
+}

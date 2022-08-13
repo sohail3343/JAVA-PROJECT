@@ -1,0 +1,46 @@
+package com.test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.test.Dao.UserRepo;
+import com.test.model.User;
+
+@SpringBootApplication
+public class BootJpaExampleApplication {
+
+	public static void main(String[] args) {
+		ApplicationContext run = SpringApplication.run(BootJpaExampleApplication.class, args);
+		UserRepo repo = run.getBean(UserRepo.class);
+		/*
+		 * User user =new User(); user.setCity("mumbai"); user.setName("sohail"); User
+		 * user1 = repo.save(user); System.out.println(user1);
+		 */
+		User user1=new User();
+		user1.setName("mubashir");
+		user1.setCity("mumbra");
+		
+		User user2=new User();
+		user2.setName("md");
+		user2.setCity("thane");
+		
+	//saving single objects	/* User u1 = repo.save(user1); User u2 = repo.save(user2); */
+		//saving multiple objects 
+		List<User> l=new ArrayList<User>();
+		l.add(user2);
+		l.add(user1);
+		//List<User> list = repo.saveAll(l);
+		//System.out.println(list);
+repo.deleteAll(l);		
+		
+		 
+	
+	System.out.println("done");
+	}
+
+}

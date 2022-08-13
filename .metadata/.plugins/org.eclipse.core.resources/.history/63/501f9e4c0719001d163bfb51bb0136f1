@@ -1,0 +1,28 @@
+package com.test.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.services.BookService;
+import com.test.entities.books;
+@RestController
+public class HomeController {
+	@Autowired
+	private BookService bookservice;
+	@GetMapping("/books")
+	public books getBooks()
+	{
+		
+		books b=new books();
+		b.setId(1);
+		b.setTitle("harry potter");
+		b.setAuthor("hawking");
+		return b;
+	}
+
+}

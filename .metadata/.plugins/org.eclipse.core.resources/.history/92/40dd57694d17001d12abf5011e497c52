@@ -1,0 +1,5 @@
+package com.SpringDataJpa.repos;
+
+public interface StudentRepository {
+
+}

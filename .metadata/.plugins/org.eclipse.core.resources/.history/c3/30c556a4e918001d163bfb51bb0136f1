@@ -1,0 +1,10 @@
+package com.test.controller;
+
+
+@HomeController
+public class Controller {
+public String home()
+{
+	return "";
+}
+}

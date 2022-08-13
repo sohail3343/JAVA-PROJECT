@@ -1,0 +1,7 @@
+package com.sohail.core.Service;
+
+import com.sohail.core.Dao.PaymentDao;
+
+public class PaymentServiceImpl implements PaymentService {
+private PaymentDao dao;
+}

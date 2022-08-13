@@ -1,0 +1,37 @@
+package com.test.services;
+
+import com.test.entities.books;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.test.entities.books;
+
+@Service
+public class BookService {
+	private static List<books> l = new ArrayList<>();
+	
+
+		l.add(new books(1, "java", "md"));
+		l.add(new books(12, "python", "sk"));
+		l.add(new books(123, "ccc", "md"));
+		l.add(new books(1333, "android", "md"));
+	
+
+	public List<books> getallBooks() {
+
+		return l;
+	}
+
+	public books getbookByid(int id) {
+		books books = l.stream().filter(e -> e.getId() == 123).findFirst().get();
+		return books;
+
+	}
+
+	public void addBooks(books b) {
+		l.add(b);
+	}
+}
